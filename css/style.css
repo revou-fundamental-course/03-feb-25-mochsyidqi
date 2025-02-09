@@ -1,12 +1,15 @@
 body {
-  background: linear-gradient(135deg, #E6E6FA, #D8BFD8, #FFC0CB, #ADD8E6);
+  font-family: 'Segoe UI';
+  background: linear-gradient(135deg, #E6E6FA, #D8BFD8, #c9828d, #5ba9c4);
+  background-size: cover; /* Ensure the background covers the entire screen */
+  background-attachment: fixed; /* Fix the background to the viewport */
   color: black; /* Set text color to black for better contrast */
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align items to the top */
-  height: 100vh;
+  align-items: center; /* Center items vertically */
+  min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
 }
 
 .container {
@@ -14,13 +17,31 @@ body {
   -webkit-backdrop-filter: blur(30px); /* Blur effect for iOS and Safari */
   backdrop-filter: blur(30px); /* Standard blur effect */
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger shadow for floating effect */
   max-width: 800px;
   width: 100%;
-  margin-top: 30px; /* Add gap of 30px from the top of the screen */
-  position: relative;
-  top: 30px; /* Additional space to enhance floating effect */
+  margin: 30px 0; /* Add gap of 30px from the top and bottom of the screen */
+}
+
+
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  height: 100px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3); /* White background with opacity */
+  -webkit-backdrop-filter: blur(10px); /* Blur effect for iOS and Safari */
+  backdrop-filter: blur(10px); /* Standard blur effect */
+  padding: 5px;
+  box-sizing: border-box; /* Ensure padding is included in the width and height */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  color: black; /* Text color */
+  text-align: left; /* Align text to the left */
+  vertical-align: top; /* Align text to the top */
+  padding-top: 5px; /* Add padding to the top */
+  padding-left: 5px; /* Add padding to the left */
 }
 
 
@@ -33,6 +54,7 @@ body {
 
  /*Center the header content */
  #judul-utama {
+  font-family: 'Segoe UI';
   text-align: center;
   font-size: 24px;
   margin-bottom: 10px; /* Reduce the bottom margin */
@@ -42,8 +64,6 @@ body {
 #paragaraf-utama {
   margin-top: 0; /* Remove any top margin */
 }
-
-
   
   /* Center the main content */
   .center-main {
@@ -67,5 +87,55 @@ body {
   }
   
   .left-align input {
+    font:bold;
     margin-top: 0; /* Remove any top margin from the input form */
   }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #333; /* Adjust the color as needed */
+  }
+  
+
+
+  .button-group {
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    color: white; /* White text */
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  button#reset {
+    background-color: #f44336; /* Red background for reset */
+  }
+  
+  button#reverse {
+    background-color: #008CBA; /* Blue background for reverse */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  button#reset:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+  }
+  
+  button#reverse:hover {
+    background-color: #007bb5; /* Darker blue on hover */
+  }
+  
