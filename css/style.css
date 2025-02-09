@@ -1,6 +1,71 @@
-/* Rafli Ku*/
+body {
+  background: linear-gradient(135deg, #E6E6FA, #D8BFD8, #FFC0CB, #ADD8E6);
+  color: black; /* Set text color to black for better contrast */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1); /* White background with opacity */
+  -webkit-backdrop-filter: blur(30px); /* Blur effect for iOS and Safari */
+  backdrop-filter: blur(30px); /* Standard blur effect */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Larger shadow for floating effect */
+  max-width: 800px;
+  width: 100%;
+  margin-top: 30px; /* Add gap of 30px from the top of the screen */
+  position: relative;
+  top: 30px; /* Additional space to enhance floating effect */
+}
+
+
+
 .button-submit {
     border-radius: 5px;
     background-color: blue;
     color: white;
 }
+
+ /*Center the header content */
+ #judul-utama {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px; /* Reduce the bottom margin */
+  color: #333; /* Adjust the color as needed */
+}
+
+#paragaraf-utama {
+  margin-top: 0; /* Remove any top margin */
+}
+
+
+  
+  /* Center the main content */
+  .center-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: left; /* Ensure text inside sections is left-aligned */
+  }
+  
+  /* Align sections inside main to the left */
+  .left-align {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .left-align p {
+    margin-bottom: 5px; /* Adjust the spacing between the text and input form */
+  }
+  
+  .left-align input {
+    margin-top: 0; /* Remove any top margin from the input form */
+  }

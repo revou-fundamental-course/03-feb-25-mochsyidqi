@@ -8,46 +8,50 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header id="judul-utama">
-      <h2>Kalkulator Temperature</h2>
-    </header>
+    <div class="container">
+      <main class="center-main">
+        <header id="judul-utama">
+          <h2>Kalkulator Temperature</h2>
+        </header>
 
-    <main>
-      <section id="paragaraf-utama">
-        <p>Masukan Suhu Drajad Celcius (&deg;C) ke kolom kotak form dibawah ini, lalu klik tombol konversi untuk mendapatkan nilai konversi ke Drajad Franheit (°F)</p>
-      </section>
+        <section id="paragaraf-utama" class="left-align">
+          <p>Masukan Suhu Drajad Celcius (°C) ke kolom kotak form dibawah ini, lalu klik tombol konversi untuk mendapatkan nilai konversi ke Drajad Franheit (°F)</p>
+        </section>
 
-      <section>
-        <form id="form-input">
-          <label for="suhu-celcius">Suhu Celcius (&deg;C): </label>
-          <input type="number" id="suhu-celcius" name="suhu-celcius" />
-        </form>
-      </section>
+        <section class="left-align">
+          <p>Suhu Celcius (°C):</p>
+          <form id="form-input">
+            <input type="number" id="suhu-celcius" name="suhu-celcius" />
+          </form>
+        </section>
 
-      <section>
-        <form id="form-hasil">
-          <label for="suhu-fahrenheit">Suhu Fahrenheit (&deg;F): </label>
-          <input type="text" id="suhu-fahrenheit" name="suhu-fahrenheit" readonly />
-        </form>
-      </section>
+        <section class="left-align">
+          <p>Suhu Fahrenheit (°F):</p>
+          <form id="form-hasil">
+            <input type="text" id="suhu-fahrenheit" name="suhu-fahrenheit" readonly />
+          </form>
+        </section>
 
-      <section>
-        <form id="cara-kalkulasi">
-          <label for="cara-konversi">Cara Konversi: </label>
-          <input type="text" id="cara-konversi" name="cara-konversi" readonly />
-        </form>
-      </section>
+        <section class="left-align">
+          <p>Cara Konversi:</p>
+          <form id="cara-kalkulasi">
+            <input type="text" id="cara-konversi" name="cara-konversi" readonly />
+          </form>
+        </section>
 
-      <section>
-        
-          <h3>Cara Konversi dari Celcius (&deg;C) ke Farenheit (&deg;F)</h3>
-        
-        <hr>
+        <section class="left-align">
+          <h3>Cara Konversi dari Celcius (°C) ke Farenheit (°F)</h3>
+          <hr>
+          <article>
+            <p>
+              Suhu <span>S</span> dalam drajad Farenheit (°F) sama dengan <span>S</span> dalam drajad Celcius (°C) kali <span>9/5</span> ditambah 32
+            </p>
+          </article>
+        </section>
+      </main>
 
-      </section>
-    </main>
-
-    <footer></footer>
+      <footer> Copyright 2025 - MochSyidqi</footer>
+    </div>
     <!-- Link JavaScript -->
     <script src="js/script.js"></script>
   </body>
