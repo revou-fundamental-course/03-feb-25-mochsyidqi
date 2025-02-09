@@ -44,14 +44,6 @@ input[type="text"] {
   padding-left: 5px; /* Add padding to the left */
 }
 
-
-
-.button-submit {
-    border-radius: 5px;
-    background-color: blue;
-    color: white;
-}
-
  /*Center the header content */
  #judul-utama {
   font-family: 'Segoe UI';
@@ -78,18 +70,28 @@ input[type="text"] {
   /* Align sections inside main to the left */
   .left-align {
     width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  #cara-konversi {
+    pointer-events: none; /* Prevents clicking */
+    background: rgba(255, 255, 255, 0.3); /* White background with opacity */
+  -webkit-backdrop-filter: blur(10px); /* Blur effect for iOS and Safari */
+  backdrop-filter: blur(10px);
+    color: inherit; /* Keeps the text color unchanged */
+    border: none; /* Removes the border */
+    outline: none; /* Removes the outline */
+  }
+  
+  
+
+  .input-align {
+    width: 50%; /* This sets the width to 1/2 of the container */
     max-width: 600px;
     margin: 0 auto;
   }
   
-  .left-align p {
-    margin-bottom: 5px; /* Adjust the spacing between the text and input form */
-  }
-  
-  .left-align input {
-    font:bold;
-    margin-top: 0; /* Remove any top margin from the input form */
-  }
 
   footer {
     text-align: center;
@@ -102,7 +104,11 @@ input[type="text"] {
 
   .button-group {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
   
   button {
     background-color: #4CAF50; /* Green background */
@@ -138,4 +144,13 @@ input[type="text"] {
   button#reverse:hover {
     background-color: #007bb5; /* Darker blue on hover */
   }
+  
+  .row {
+    width: -webkit-fill-available;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Adjust the gap as needed */
+  }
+
+  
   

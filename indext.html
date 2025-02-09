@@ -17,32 +17,39 @@
         <section id="paragaraf-utama" class="left-align">
           <p>Masukan Suhu Drajad Celcius (°C) ke kolom kotak form dibawah ini, lalu klik tombol konversi untuk mendapatkan nilai konversi ke Drajad Franheit (°F)</p>
         </section>
+        <div class="row">
+          <label><strong>From</strong></label>
+          <label><strong>To</strong></label>
+        </div>
 
-        <section class="left-align">
-          <p><strong>Suhu Celcius (°C):</strong></p>
-          <form id="form-input">
-            <input type="number" id="suhu-celcius" name="suhu-celcius" />
-            <div class="button-group">
-              <button type="button" id="konversi">Konversi</button>
-              <button type="reset" id="reset">Reset</button>
-              <button type="button" id="reverse">Reverse</button>
-            </div>
-          </form>
-        </section>
+        <div class="row">
+          <section class="left-align">
+            <p><strong>Suhu Celcius (°C)</strong></p>
+            <form id="form-input">
+              <input type="number" id="suhu-celcius" name="suhu-celcius" />
+            </form>
+          </section>
 
-        <section class="left-align">
-          <p><strong>Suhu Fahrenheit (°F)</strong></p>
-          <form id="form-hasil">
-            <input type="text" id="suhu-fahrenheit" name="suhu-fahrenheit" readonly />
-          </form>
-        </section>
+          <section class="left-align">
+            <p><strong>Suhu Fahrenheit (°F)</strong></p>
+            <form id="form-hasil">
+              <input type="number" id="suhu-fahrenheit" name="suhu-fahrenheit"/>
+            </form>
+          </section>
+        </div>
+        <div class="button-group">
+          <button type="button" id="konversi">Konversi</button>
+          <button type="reset" id="reset">Reset</button>
+          <button type="button" id="reverse">Reverse</button>
+
+        </div>
 
         <section class="left-align">
           <p><strong>Cara Konversi:</strong></p>
           <form id="cara-kalkulasi">
             <input type="text" id="cara-konversi" name="cara-konversi" readonly />
           </form>
-        </section>
+        </section>        
 
         <section class="left-align">
           <h3>Cara Konversi dari Celcius (°C) ke Farenheit (°F)</h3>
