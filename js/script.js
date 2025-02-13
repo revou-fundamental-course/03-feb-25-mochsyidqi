@@ -64,7 +64,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (isReversed) {
     formInput.value = "S (°F) = (S (°C) x 9/5) + 32";
-  } else {
+  } 
+  if(!isReversed) {
     formInput.value = "S (°F) = (S (°C) + 32) x 5/9";
   }
 });
