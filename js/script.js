@@ -59,16 +59,16 @@ document.getElementById("reverse").addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-  var isReversed = true; // Change this value to test different scenarios
+  var isReverse = true; // Change this value to test different scenarios
   var formInput = document.getElementById("cara-konversi");
 
-  if (isReversed) {
+  if (isReverse) {
     formInput.value = "S (°F) = (S (°C) x 9/5) + 32";
-  } 
-  if(!isReversed) {
+  } else {
     formInput.value = "S (°F) = (S (°C) + 32) x 5/9";
   }
 });
+
 
 
 
