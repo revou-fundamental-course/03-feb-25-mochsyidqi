@@ -15,10 +15,10 @@ document.getElementById("konversi").addEventListener("click", function () {
   var fahrenheitValue = document.getElementById("suhu-fahrenheit").value;
 
   if (celciusValue !== "") {
-    fahrenheitValue = parseFloat(celciusValue) + 32;
+    fahrenheitValue = parseFloat(celciusValue)*9/5 + 32;
     document.getElementById("suhu-fahrenheit").value = fahrenheitValue;
   } else if (fahrenheitValue !== "") {
-    celciusValue = parseFloat(fahrenheitValue) - 32;
+    celciusValue = (parseFloat(fahrenheitValue) - 32)*5/9;
     document.getElementById("suhu-celcius").value = celciusValue;
   }
 });
